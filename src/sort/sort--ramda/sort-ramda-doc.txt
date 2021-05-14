@@ -1,0 +1,32 @@
+/*
+
+ Sort the list according to the comparator function.
+
+ Becareful, the sort algorithm used the native Array.prototype.sort
+ so it has limitation, see [1]
+
+ It will not mutate the original array.
+
+ Typescript:
+
+   sort<T>(
+     comparatorFn:( a:T, b:T ) => number,
+     list:readonly T[]
+   ):T[]
+
+   sort<T>(
+     comparatorFn:( a:T, b:T ) => number,
+   ):( list:readonly T[] ) => T[];
+
+
+ Hindley-Milner:
+
+   ( (a,a)->Number ) -> [a] -> [a]
+
+ [1] https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#sort_stability).
+
+*/
+
+
+
+
